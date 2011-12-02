@@ -1,0 +1,10 @@
+---
+layout: post
+title: Screen scraping Netflix Instant movies from comments
+published: true
+made-with: ruby, Nokogiri
+categories: [hacks]
+posterous_url: http://rogrammin.posterous.com/screen-scraping-netflix-instant-movies-from-c
+posterous_slug: screen-scraping-netflix-instant-movies-from-c
+---
+There was a comment thread on Reddit looking for funny movies. There <br />were tons of responses, and I was wondering which films are on Netflix <br />Instant. <p /> Instead of doing the checks by hand I hacked together a bit of Ruby. <br />Thought these were hilariously hacky (who needs DOM parsing when you <br />have the string.includes? function!), but they saved some time in <br />narrowing my search, so thought I would share. <p /> This one uses Netflix's open API. It operates only with perfectly exact matches. <p /> <script src="https://gist.github.com/1293640.js"></script><p /> This one blatantly abuses InstantWatcher's search box. <p /> <script src="https://gist.github.com/1293695.js"></script>

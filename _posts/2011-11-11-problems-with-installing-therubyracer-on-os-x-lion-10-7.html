@@ -1,0 +1,29 @@
+---
+layout: post
+title: Problems with installing therubyracer on OS X Lion (10.7)?
+published: true
+categories: [tricks]
+posterous_url: http://rogrammin.posterous.com/problems-with-installing-therubyracer-on-os-x
+posterous_slug: problems-with-installing-therubyracer-on-os-x
+---
+<p>If you are having trouble installing therubyracer on Mac OS X Lion 10.7, getting an error message like:</p>
+
+<div class="CodeRay">
+  <div class="code"><pre>ld: library not found for -lv8
+collect2: ld returned 1 exit status
+make: *** [v8.bundle] Error 1
+rake aborted!
+Command failed with status (2): [make...]</pre></div>
+</div>
+
+
+<p>Try installing v8 from brew first:</p>
+
+<div class="CodeRay">
+  <div class="code"><pre>brew install v8
+sudo gem install libv8
+sudo gem install therubyracer</pre></div>
+</div>
+
+
+<p>Let me know if that works for you. This issue should be resolved in the next release of therubyracer.</p>

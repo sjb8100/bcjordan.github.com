@@ -1,0 +1,16 @@
+---
+layout: post
+title: Getting your Heroku Facebook app to work in Facebook's canvas
+published: true
+categories: [tricks]
+posterous_url: http://rogrammin.posterous.com/getting-your-heroku-facebook-app-to-work-in-f
+posterous_slug: getting-your-heroku-facebook-app-to-work-in-f
+---
+<p>[[posterous-content:zNJrfk8zAshzl00N6dtZ]]</p>
+<p>With Heroku's insta-Facebook integration template, you get very close to an instantly deployed canvas iframe Facebook app.<p /> The default ruby, php and node code won't handle POST requests. Facebook's iframe makes first contact with your Heroku app using a POST request to the path /. <p /> You might get something like node's: <p />  Cannot POST / <p /> or Ruby's <p />  "POST / HTTP/1.1" 404 <p /> or PHP's <p />  Invalid credentials <p /> My solution was to support both GET and POST for "/". Sample ruby/sinatra fix: <p /> <script src="https://gist.github.com/1225947.js"></script></p>
+<p>Sample node.js fix:</p>
+<p><script src="https://gist.github.com/1225969.js"></script></p>
+<p>Now our app is looking social.</p>
+<p>[[posterous-content:jCjsmnpabheirIIjnrqD]]</p>
+<p>Pipe up if there are better ways of working with Facebook's iframe POST. I didn't see a quick fix to make PHP handle a POST request to /. Anyone try canvasing with Python?</p>
+<p>Have fun!</p>

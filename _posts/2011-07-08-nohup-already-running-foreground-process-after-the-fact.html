@@ -1,0 +1,16 @@
+---
+layout: post
+title: nohup already running foreground process after the fact
+published: true
+categories: [tricks]
+posterous_url: http://rogrammin.posterous.com/nohup-already-running-foreground-process-afte
+posterous_slug: nohup-already-running-foreground-process-afte
+---
+<p>So you've been running a script for 8 hours that takes 3 days to run. And it's 5pm on a Friday. And your flight leaves in 30 minutes. And the bomb timer goes off in 15 seconds.</p>
+<p>And your script's process is in the foreground. And you neglected to run it in screen.</p>
+<p style="">[[posterous-content:DgrphgtpyrvquJIlnBAh]]</p>
+<p>You know there's a way to background a process in the foreground (ctrl+z), and a way to nohup a process when you start it so you can log off while it runs (nohup ./program &amp;).</p>
+<p>But nohup only works when you first start a process. How do you "nohup" an already running process after the fact?</p>
+<p>This maneuver may save your life (or at least your process):</p>
+<p><script src="https://gist.github.com/1072952.js"></script></p>
+<p>Then it's pi&ntilde;a coladas for you, root!</p>

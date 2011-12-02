@@ -1,0 +1,79 @@
+---
+layout: post
+title: Adding a session page view counter and an HTTP referrer variable to the session
+  in Rails
+published: true
+made-with: ruby, rails
+categories: [hacks]
+posterous_url: http://rogrammin.posterous.com/syntax-highlighting-volume-2
+posterous_slug: syntax-highlighting-volume-2
+---
+<p><span style="font-size: large;">Adding a page view counter to the Rails session:</span></p>
+<p>In your helper (e.g., app/helpers/gifts_helper.rb):</p>
+<p>[code] 
+ def session_increment 
+&nbsp; if session[:count] 
+&nbsp; &nbsp; session[:count] += 1 
+&nbsp; else 
+&nbsp; &nbsp; session[:count] = 0 
+&nbsp; end 
+ end 
+ 
+ def count&nbsp;
+&nbsp; session[:count].to_i 
+ end
+
+
+[/code]</p>
+<p>And in your view (e.g., app/views/gifts/random.html.erb):</p>
+<p>[code]&nbsp;
+
+
+&lt;% session_increment %&gt;
+
+
+You've been here &lt;%= count %&gt; times!
+
+
+&lt;% if (count &gt; 5) %&gt; Here's your frequent visitor card! Yay! &lt;% end %&gt;
+
+
+[/code]</p>
+<p><span style="font-size: large;">Storing the referrer in the Rails session:</span></p>
+<p>Note that we refer to referrer as referer. Though this spelling is incorrect, it seems to be the way all the cool kids do it.</p>
+<p>[code]&nbsp;
+
+
+def save_referer&nbsp;
+
+
+&nbsp; unless session['referer'] 
+&nbsp; &nbsp; session['referer'] = request.env["HTTP_REFERER"] || 'none' 
+&nbsp; &nbsp; end 
+ end 
+ 
+ def ref 
+&nbsp; if session['referer'] 
+&nbsp; &nbsp; session['referer'] 
+&nbsp; else 
+&nbsp; &nbsp; "nowhere" 
+&nbsp; end 
+ end 
+[/code]</p>
+<p>&nbsp;</p>
+<p>Now, in your view:</p>
+<p>[code]&nbsp;
+
+
+&lt;% if (ref.include? "reddit.com") %&gt;
+
+
+&nbsp; &lt;img src="fffffffuuuuuuuuuuuu.png" /&gt;
+
+
+&lt;% end %&gt;
+
+
+[/code]</p>
+<p>&nbsp;</p>
+<p>This has been the first of 1 installments of Brian uses Posterous to post mini-tutorials. This syntax highlighting is wweeeeeeak.</p>

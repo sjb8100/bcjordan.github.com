@@ -1,0 +1,31 @@
+---
+layout: post
+title: Listing files in date order in Linux / bash using a simple mnemonic
+published: true
+categories: [tricks]
+posterous_url: http://rogrammin.posterous.com/listing-files-in-date-order-in-linux-bash-usi
+posterous_slug: listing-files-in-date-order-in-linux-bash-usi
+---
+<p>Want to order a file listing by date modified? This is the command I&rsquo;ve found myself using, mostly because it has a simple mnemonic of its arguments:</p>
+
+<div class="CodeRay">
+  <div class="code"><pre>ls -last</pre></div>
+</div>
+
+
+<ul>
+<li><strong>-l</strong> &ndash; list in long format (one file per line, with file details)</li>
+<li><strong>-a</strong> &ndash; include files starting with .</li>
+<li><strong>-s</strong> &ndash; display filesize (in blocks). Incredibly unnecessary, because -l gives you number of bytes in file. But -last sounds cooler than -lat.</li>
+<li><strong>-t</strong> &ndash; sort by date / time modified, most recently modified first</li>
+</ul>
+
+
+<p><em>Bonus</em>: if you&rsquo;d like to display the most recent files on the bottom of the list, throw in -r to reverse the listing order.</p>
+
+<div class="CodeRay">
+  <div class="code"><pre>ls -lastr</pre></div>
+</div>
+
+
+<p>Anyone else have silly mnemonics they use for shell commands? I also enjoy screen -raAd.</p>

@@ -1,0 +1,11 @@
+---
+layout: post
+title: ! 'Machine Learning Prediction of Reddit popularity (and my first gem)'
+made-with: ruby and Reddit API
+published: true
+categories: [projects]
+posterous_url: http://rogrammin.posterous.com/first-ruby-gem-redruby-ruby-reddit-api
+posterous_slug: first-ruby-gem-redruby-ruby-reddit-api
+---
+<p>[[posterous-content:6VKIaGE9yJmbIfu4H01A]]</p>
+<p><strong>redruby</strong> (<a href="http://github.com/bcjordan/redruby">github</a>) is a ruby gem for interacting with the <a href="code.reddit.com/wiki/API">Reddit API</a>. <p /> redruby takes in Reddit's JSON hashes and defines ruby objects such as <strong>Users</strong>, <strong>Comments</strong> and <strong>Submissions</strong>. A <strong>Parser</strong> class parses data from JSON result pages and generates these new User, Comment and Submission objects. <p /> This was built as part of a machine learning final project (<a href="https://github.com/bcjordan/Reddit-Machine-Learning">github</a>), predicting Reddit submission popularity based on various attributes. Depending on time and motivation, this may be bundled into redruby example documentation, as it is a useful example for collecting and time-sampling Reddit submissions. <p /> The machine learning portion of this project involved using <a href="http://www.cs.waikato.ac.nz/ml/weka/">Weka</a>, a Java data mining toolkit, to build a classifier which takes in submission <strong>features</strong> (e.g., word occurrences, number of comments after 3 minutes, <a href="http://en.wikipedia.org/wiki/Readability#The_Flesch_formulas">Flesch</a> and <a href="http://en.wikipedia.org/wiki/Readability#The_Gunning_Fog_formula">Gunning Fog</a> readability of text) and predicts its <strong>class</strong> (or classification). In our case, the class variable is whether the&nbsp;submission's number of future upvotes is above a certain threshold.</p>
