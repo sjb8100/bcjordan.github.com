@@ -1,0 +1,32 @@
+---
+layout: post
+title: GifURL
+published: true
+made-with: Ruby on Rails and HTML5
+game-url: http://ravegame.herokuapp.com
+categories: [projects, sites]
+permalink: /projects/gifurl
+sidebar: <img src="http://gifurl.com/jackson+popcorn.gif" style=""><img src="http://gifurl.com/science.gif" style="margin-top:10px"><img src="http://gifurl.com/racist.gif" style="margin-top:10px"><img src="http://gifurl.com/dance.gif" style="margin-top:10px">
+---
+
+# Inspiration
+
+GifURL came from an annoyance. **Finding GIFs online was hard**. Go ahead, <a onclick="$('#timer').text('TIMER!')">start a timer</a> and find the direct URL of a gif of Michael Jackson eating popcorn right now.
+
+<div id="timer"></div>
+
+# Designing a faster alternative
+
+<code>http://gifurl.com/popcorn.gif</code> should return a popular popcorn gif
+
+<code>http://gifurl.com/popcorn.2.gif</code> should return the second most popular popcorn gif
+
+<code>http://gifurl.com/popcorn jackson.gif</code> should return the Michael Jackson popcorn gif
+
+# Building it
+
+Used rails. Built it.
+
+# Use it
+
+[http://gifurl.com](http://gifurl.com)
