@@ -19,13 +19,17 @@ GifURL came from an annoyance. **Finding GIFs online was hard**. Go ahead, <a on
 
 <code>http://gifurl.com/popcorn.gif</code> should return a popular popcorn gif
 
+<code>http://gifurl.com/popcorn jackson.gif</code> should return the Michael Jackson popcorn gif
+
 <code>http://gifurl.com/popcorn.2.gif</code> should return the second most popular popcorn gif
 
-<code>http://gifurl.com/popcorn jackson.gif</code> should return the Michael Jackson popcorn gif
+<code>http://gifurl.com/http://i.imgur.com/2UxZE.gif</code> should rehost the gif and let us tag it
+
+The result should be **embeddable** as an image and **never break**.
 
 # Building it
 
-Used rails. Built it.
+Used rails. [Built it](http://github.com/bcjordan/gifurl). Added tools for screen scraping and mass importing.
 
 # Use it
 
