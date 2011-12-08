@@ -1,0 +1,38 @@
+---
+layout: post
+title: Keyboard Trainer
+published: true
+made-with: HTML5
+game-url: http://kbtask.herokuapp.com
+categories: [projects, sites]
+permalink: /projects/kbtask
+sidebar: <img src="/images/ktnetwork.png" style=""/><img src="/images/ktgraph.png" style="margin-top:10px"><img src="/images/ktsidebar.png" style="margin-top:10px"/><img src="/images/kttranscription.png" style="margin-top:10px"/><img src="/images/kttypewriter.png" style="margin-top:10px"/>
+---
+
+<script>
+
+</script>
+
+# Modeling Human Keyboarding
+
+For my final project in Tufts' [course in computational modeling](http://www.cs.tufts.edu/COMP/150CM/timetable.html), I decided to build a model of keyboard typing.
+
+To collect data to verify the model's accuracy, I built a web-based tool to track keypresses and their timings. I went a little overboard and ended up with a pretty full-fledged typing trainer.
+
+# Getting the Task Framework Done Fast (and fun!)
+
+For the front-end of the keyboarding task, I used Javascript. Having just completed the HTML5 game jam in which I made [Rave Game](http://bcjordan.github.com/games/ravegame), Javascript was fresh on my mind. That, and something browser-based would be easiest to load on anyone's laptop during presentation time. 
+
+I ended up using portions of JQuery for display changes, the Twitter bootstrap framework for UI elements and HighCharts for graphing. [It's on GitHub](http://github.com/bcjordan/keytask).
+
+# Building the Model
+
+In building the model, I decided to focus on a tiny subset of the transcription typing phenomena noted in [Wu and Liu 2008](http://www-personal.umich.edu/~yililiu/Wu-Liu-TOCHI-typing-2008.pdf). I ended up with a neural network model that closely matches the source data for a number of the criterion. 
+
+# Play with it!
+
+I think the coolest part of this project has to be the experience of typing and seeing your data points appear on the graph right below your input box. Give it a shot!
+
+**Play it at: [http://kbtask.herokuapp.com](http://kbtask.herokuapp.com)**
+
+<!-- TODO: add framework in-line -->
