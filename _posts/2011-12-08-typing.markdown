@@ -15,13 +15,13 @@ sidebar: <img src="/images/ktnetwork.png" style=""/><img src="/images/ktgraph.pn
 
 # Modeling Human Keyboarding
 
-For my final project in Tufts' [course in computational modeling](http://www.cs.tufts.edu/COMP/150CM/timetable.html), I decided to build a model of keyboard typing.
+For my final project in Tufts' [course in computational modeling](http://www.cs.tufts.edu/comp/150CM/timetable.html), I decided to build a model of keyboard typing.
 
 To collect data to verify the model's accuracy, I built a web-based tool to track keypresses and their timings. I went a little overboard and ended up with a pretty full-fledged typing trainer.
 
 # Getting the Task Framework Done Fast (and fun!)
 
-For the front-end of the keyboarding task, I used Javascript. Having just completed the HTML5 game jam in which I made [Rave Game](http://bcjordan.github.com/games/ravegame), Javascript was fresh on my mind. That, and something browser-based would be easiest to load on anyone's laptop during presentation time. 
+For the front-end of the keyboarding task, I used Javascript. Having just completed the HTML5 game jam in which I made [Rave Game](http://bcjordan.github.com/games/rave-thru-dawn/), Javascript was fresh on my mind. That, and something browser-based would be easiest to load on anyone's laptop during presentation time. 
 
 I ended up using portions of JQuery for display changes, the Twitter bootstrap framework for UI elements and HighCharts for graphing. [It's on GitHub](http://github.com/bcjordan/keytask).
 
