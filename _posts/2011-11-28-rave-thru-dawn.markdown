@@ -10,6 +10,8 @@ screenshot: ravegame.png
 permalink: /games/rave-thru-dawn
 ---
 
+## [Play {{page.title}}]({{page.game-url}})
+
 ## The Jam
 
 Last weekend, my brother [Eric][eric] and I went to the [HTML5 game jam][jam] held at the MIT-[GAMBIT][gambit] game lab at 5 Cambridge Center. It was fun to be back around Kendall Square, the site of [my first tech internship][olpc]. I had a chance to see the newly minted [entrepreneur's walk of fame][wof], good stuff!
@@ -66,10 +68,9 @@ We ended up finding impact.js to be geared a bit too much towards one style of g
 
 Impact's class system and sprite-based animation capabilities were very useful, though. We also saw other teams using impact's out-of-the-box physics and mapmaking functionality. You can get a platformer prototyped in a couple of hours using impact.
 
-## Play Our Game!
-[![Rave Thru Dawn screenshot](/images/ravegame.png "Rave Thru Dawn screenshot")]({{page.game-url}})
+## [Play Our Game: {{page.title}}]({{page.game-url}})
 
-[Click to play {{page.title}}]({{page.game-url}}).
+[![Rave Thru Dawn screenshot](/images/ravegame.png "Rave Thru Dawn screenshot")]({{page.game-url}})
 
 **Instructions**: You are DJing. Play popular songs to make your club's visitors happy. Click "Record Bin" or **press Tab or Space to select a song**. You can queue up two songs at a time. Collect CDs to make money to play more hits!
 
