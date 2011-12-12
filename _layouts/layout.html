@@ -29,6 +29,7 @@
   <link rel="stylesheet" href="/css/style.css">
   <!-- custom scripts loaded at end for performance -->
   <script src="/js/libs/modernizr-2.0.6.min.js"></script>
+  
   <!-- Le styles -->
   <link href="/css/bootstrap.min.css" rel="stylesheet">
   <style type="text/css">
@@ -113,7 +114,7 @@
          <h1><a href="{{ page.url }}">{{ page.title }}</a> <small>{{page.description}} {{ page.made-with }}</small></h1>
        </div>
        <div class="row">
-         <div class="span{%if page.sidebar%}10{%else%}14%{%endif%}">
+         <div class="span{%if page.sidebar%}10{%else%}14{%endif%}">
            <!-- <h2>Main content</h2> -->
            {{ content }}
          </div>
@@ -145,6 +146,30 @@
 
   <!-- scripts specific to post-->
   <script>{{ page.script }}</script>
+  
+  {% if page.slider %}
+  <script type="text/javascript" src="/js/slider.js"></script>
+  <link href="/css/slider.min.css" rel="stylesheet" type="text/css" /> 
+  {% endif %}
+  
+  {% if page.slider %}
+  <script>
+    var slider = new Slider($('#slider'));
+    slider.setTransition('circle').setPhotos([
+      
+      { "src" : "/images/ktgraph.png", "name": "Typing Analysis" },
+      { "src" : "/images/ktsidebar.png", "name": "Typing Analysis" },
+      { "src" : "/images/ktnetwork.png", "name": "Typing Analysis" },
+      { "src" : "/images/sytyk.png", "name": "Facebook App" },
+      { "src" : "/images/gifurl.png", "name": "GifURL" },
+      { "src" : "/images/redruby.jpg", "name": "Flesch Readability" },
+      { "src" : "/images/ktfull.png", "name": "Typing Game" },
+      { "src" : "/images/railsgonewild.png", "name": "Rails Docs Gone Wild" },
+      { "src" : "/images/ravegame.png", "name": "Rave Game (HTML5)" }
+    ]);
+    slider.setSize(400, 250);
+  </script>
+  {% endif %}
 	
   <!-- Change UA-XXXXX-X to be your site's ID -->
   <script>
@@ -153,8 +178,7 @@
       load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
     });
   </script>
-
-
+  
   <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you want to support IE 6.
        chromium.org/developers/how-tos/chrome-frame-getting-started -->
   <!--[if lt IE 7 ]>

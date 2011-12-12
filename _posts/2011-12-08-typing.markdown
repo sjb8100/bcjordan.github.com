@@ -9,10 +9,6 @@ permalink: /projects/kbtask
 sidebar: <img src="/images/ktnetwork.png" style=""/><img src="/images/ktgraph.png" style="margin-top:10px"><img src="/images/ktsidebar.png" style="margin-top:10px"/><img src="/images/kttranscription.png" style="margin-top:10px"/><img src="/images/kttypewriter.png" style="margin-top:10px"/>
 ---
 
-<script>
-
-</script>
-
 # Modeling Human Keyboarding
 
 For my final project in Tufts' [course in computational modeling](http://www.cs.tufts.edu/comp/150CM/timetable.html), I decided to build a model of keyboard typing.
