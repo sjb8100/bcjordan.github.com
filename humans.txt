@@ -1,40 +1,14 @@
 
-/* TEAM */
+/* AUTHOR */
   Brian Jordan
 
 /* THANKS */
-  Names (& URL): Zach Holman,
-                 the Jekyll project,
-                 HTML5 boilerplate,
-                 twitter bootstrap 
+  Zach Holman for his Jekyll intro,
+  the Jekyll project for Jekyll,
+  HTML5 boilerplate for making this site play well with others,
+  twitter bootstrap for helping half-baked websites look pretty
 
 /* SITE */
   Standards: HTML5, CSS3
   Components: Modernizr, jQuery
   Software: Jekyll
-  
-
-                                    
-                               -o/-                       
-                               +oo//-                     
-                              :ooo+//:                    
-                             -ooooo///-                   
-                             /oooooo//:                   
-                            :ooooooo+//-                  
-                           -+oooooooo///-                 
-           -://////////////+oooooooooo++////////////::    
-            :+ooooooooooooooooooooooooooooooooooooo+:::-  
-              -/+ooooooooooooooooooooooooooooooo+/::////:-
-                -:+oooooooooooooooooooooooooooo/::///////:-
-                  --/+ooooooooooooooooooooo+::://////:-   
-                     -:+ooooooooooooooooo+:://////:--     
-                       /ooooooooooooooooo+//////:-        
-                      -ooooooooooooooooooo////-           
-                      /ooooooooo+oooooooooo//:            
-                     :ooooooo+/::/+oooooooo+//-           
-                    -oooooo/::///////+oooooo///-          
-                    /ooo+::://////:---:/+oooo//:          
-                   -o+/::///////:-      -:/+o+//-         
-                   :-:///////:-            -:/://         
-                     -////:-                 --//:        
-                       --                       -:        
