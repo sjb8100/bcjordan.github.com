@@ -111,7 +111,15 @@
    <div class="container">
      <div class="content">
        <div class="page-header">
+         {% if page.books %}
+        <div class="books">
+           {% for book in page.books %}
+            <img src="/images/books/{{book}}.jpeg" class="book"/>
+           {% endfor %}
+         </div>
+         {% else %}
          <h1><a href="{{ page.url }}">{{ page.title }}</a> <small>{{page.description}} {{ page.made-with }}</small></h1>
+         {% endif %}
        </div>
        <div class="row">
          <div class="span{%if page.sidebar%}10{%else%}14{%endif%}">
