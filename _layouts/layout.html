@@ -113,7 +113,7 @@
        <div class="page-header">
          {% if page.books %}
         <div class="books">
-           {% for book in page.books %}
+           {% for book in (1..12) %}
             <img src="/images/books/{{book}}.jpeg" class="book"/>
            {% endfor %}
          </div>
