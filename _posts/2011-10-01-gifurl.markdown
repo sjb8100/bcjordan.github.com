@@ -6,7 +6,7 @@ made-with: Ruby on Rails and HTML5
 game-url: http://ravegame.herokuapp.com
 categories: [projects, sites]
 permalink: /projects/gifurl
-sidebar: <img src="http://gifurl.com/jackson+popcorn.gif" style=""><img src="http://gifurl.com/science.gif" style="margin-top:10px"><img src="http://gifurl.com/racist.gif" style="margin-top:10px"><img src="http://gifurl.com/dance.gif" style="margin-top:10px">
+sidebar: <img src="http://gifurl.com/jackson+popcorn.gif" style=""><img src="http://gifurl.com/science.gif" style="margin-top:10px"><img src="http://gifurl.com/dance.gif" style="margin-top:10px">
 ---
 
 <script>
