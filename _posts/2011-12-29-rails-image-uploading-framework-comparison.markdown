@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Rails comparison: CarrierWave vs. Paperclip vs. Dragonfly
+title: Rails comparison CarrierWave vs. Paperclip vs. Dragonfly
 published: true
 categories: [tricks, fixes]
 ---
