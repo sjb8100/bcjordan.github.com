@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Testing GitHub's new feature
+title: Editing Jekyll posts online using GitHub's new feature
 published: true
 categories: [tricks]
 ---
 
 This is pretty neat. Github has a new [file creation and editing tool](https://github.com/blog/1327-creating-files-on-github).
 
-Now messing with Jekyll posts can be done online!
+Now creating and editing [Jekyll](https://github.com/mojombo/jekyll) / [Octopress](http://octopress.org/) / JekyllBootstrap posts can be done online. Just log in to GitHub, navigate to your *.github.com/_posts folder, and create or edit a post!
