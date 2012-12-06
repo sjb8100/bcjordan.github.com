@@ -1,0 +1,10 @@
+---
+layout: post
+title: Testing GitHub's new feature
+published: true
+categories: [tricks]
+---
+
+This is pretty neat. Github has a new [file creation and editing tool](https://github.com/blog/1327-creating-files-on-github).
+
+Now messing with Jekyll posts can be done online!
