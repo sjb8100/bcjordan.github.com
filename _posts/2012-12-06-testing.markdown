@@ -3,6 +3,7 @@ layout: post
 title: Editing Jekyll posts online using GitHub's new feature
 published: true
 categories: [tricks]
+permalink: editing-jekyll-online
 ---
 
 This is pretty neat. Github has a new [file creation and editing tool](https://github.com/blog/1327-creating-files-on-github).
