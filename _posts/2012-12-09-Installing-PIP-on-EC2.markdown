@@ -1,3 +1,11 @@
+---
+layout: post
+title: Installing python pip on Amazon EC2 images
+published: true
+categories: [tricks]
+permalink: pip-on-amazon-ec2
+---
+
 Amazon's EC2 image has yum, rpm installations, and the other niceities of Red Hat / Fedora brand Linux, and lightning fast local repo access.
 
 Unfortunatley, pip doesn't seem to be in the repo.
