@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Unity comparison: Sprite Manager 2, 2D Toolkit, EX2D, BlitzMax
+title: "Unity comparison: Sprite Manager 2, 2D Toolkit, EX2D, BlitzMax"
 published: true
 categories: [tricks, fixes]
 permalink: unity-2d-sprite-comparison
