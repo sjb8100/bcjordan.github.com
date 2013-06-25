@@ -6,6 +6,8 @@ categories: [tricks, fixes]
 permalink: /unity-2d-sprite-comparison
 ---
 
+This post is a work in progress. If you have any suggestions or opinions on these 2d frameworks, send me a note using the contact form at the bottom of this page!
+
 # Which should you use -- Sprite Manager 2, 2D Toolkit, EX2D, or BlitzMax?
 
 ## [Sprite Manager 2](http://www.anbsoft.com/middleware/sm2/) ($149)
