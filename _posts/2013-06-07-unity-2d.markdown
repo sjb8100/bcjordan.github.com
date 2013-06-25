@@ -3,7 +3,7 @@ layout: post
 title: "Unity comparison: Sprite Manager 2, 2D Toolkit, EX2D, BlitzMax"
 published: true
 categories: [tricks, fixes]
-permalink: unity-2d-sprite-comparison
+permalink: /unity-2d-sprite-comparison
 ---
 
 # Which should you use -- Sprite Manager 2, 2D Toolkit, EX2D, or BlitzMax?
