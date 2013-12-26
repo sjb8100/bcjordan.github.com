@@ -1,0 +1,42 @@
+---
+layout: post
+title: "Creating GitHub repositories from the shell"
+published: true
+categories: [tricks]
+permalink: /create-github-repository-from-command-line-terminal-shell
+---
+
+# Install Hub
+
+```
+brew install hub
+```
+
+# Create Repository
+
+```
+hub create ruby-bits
+```
+
+## Protocol issue and workaround
+
+Getting the error:
+
+```
+brian:rails brian$ hub create ruby-bits
+github.com username: bcjordan
+github.com password for bcjordan (never stored): 
+Updating origin
+Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+error: Could not fetch origin
+```
+
+The fix was to set the hub protocol to always use https instead of git:
+
+```bash
+git config --global hub.protocol https
+```
