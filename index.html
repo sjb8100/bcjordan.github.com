@@ -3,14 +3,35 @@ layout: layout
 title: "Brian Jordan"
 slider: true
 books: true
+essays:
+  - url: http://blog.bcjordan.com/yc-hacks-project/
+    title: "YC Hacks post-mortem: 7 things that went well"
+  - url: http://blog.bcjordan.com/building-forum-beatthegmat/
+    title: "Learning to build a community forum from BEATtheGMAT"
+  - url: http://blog.codingforinterviews.com/best-programming-language-jobs/
+    title: "Choosing a programming language for interviews"
+  - url: http://blog.codingforinterviews.com/say-you-dont-know/
+    title: "Say you don't know"
+  - url: http://blog.codingforinterviews.com/reading-code-standard-libraries/
+    title: "Read your standard libraries"
 ---
 <div id='slider' style="float:right"></div>
   <div class="projects">
+    <h1>Writing:</h1>
+    <ul>
+    {% for item in page.essays %}
+      <li>
+        <span><a href="{{item.url}}">{{item.title}}</a></span>
+      </li>
+    {% endfor %}
+    </ul>
+  </div>
+    <div class="projects">
     <h1>Projects:</h1>
     <ul>
     {% for post in site.categories.projects %}
       <li>
-        <span>{{ post.date | date: "%B %e, %Y" }}</span> <a href="{% if post.external_url %}{{ post.external_url }}{% else %}{{ post.url }}{% endif %}">{{ post.title }}</a>
+        <span>{{ post.date | date: "%B %Y" }}</span> <a href="{% if post.external_url %}{{ post.external_url }}{% else %}{{ post.url }}{% endif %}">{{ post.title }}</a>
         {% if post.made-with %}({{ post.made-with }}){%endif%}
       </li>
     {% endfor %}
