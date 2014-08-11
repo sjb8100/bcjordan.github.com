@@ -10,7 +10,7 @@ books: true
     <ul>
     {% for post in site.categories.projects %}
       <li>
-        <span>{{ post.date | date: "%B %e, %Y" }}</span> <a href="{% if post.posterous_url %}{{ post.posterous_url }}{% else %}{{ post.url }}{% endif %}">{{ post.title }}</a>
+        <span>{{ post.date | date: "%B %e, %Y" }}</span> <a href="{% if post.external_url %}{{ post.external_url }}{% else %}{{ post.url }}{% endif %}">{{ post.title }}</a>
         {% if post.made-with %}({{ post.made-with }}){%endif%}
       </li>
     {% endfor %}
@@ -21,7 +21,7 @@ books: true
     <ul>
     {% for post in site.categories.hacks %}
       <li>
-        <span>{{ post.date | date: "%B %e, %Y" }}</span> <a href="{% if post.posterous_url %}{{ post.posterous_url }}{% else %}{{ post.url }}{% endif %}">{{ post.title }}</a>
+        <span>{{ post.date | date: "%B %e, %Y" }}</span> <a href="{% if post.external_url %}{{ post.external_url }}{% else %}{{ post.url }}{% endif %}">{{ post.title }}</a>
         {% if post.made-with %}({{ post.made-with }}){%endif%}
       </li>
     {% endfor %}
@@ -32,11 +32,10 @@ books: true
     <ul>
     {% for post in site.categories.tricks %}
       <li>
-        <span>{{ post.date | date: "%B %e, %Y" }}</span> <a href="{% if post.posterous_url %}{{ post.posterous_url }}{% else %}{{ post.url }}{% endif %}">{{ post.title }}</a>
+        <span>{{ post.date | date: "%B %e, %Y" }}</span> <a href="{% if post.external_url %}{{ post.external_url }}{% else %}{{ post.url }}{% endif %}">{{ post.title }}</a>
       </li>
     {% endfor %}
     </ul>
   </div>
-  
 
-  
+

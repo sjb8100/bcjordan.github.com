@@ -6,7 +6,7 @@ made-with: iOS, Android, Lua (Corona API)
 game-url: http://bcjordan.github.com/sprayplay
 categories: [games, projects]
 screenshot: https://github.com/bcjordan/sprayplay/raw/master/screenshot.png
-posterous_url: http://bcjordan.github.com/sprayplay
+external_url: http://bcjordan.github.com/sprayplay
 permalink: /games/sprayplay
 ---
 

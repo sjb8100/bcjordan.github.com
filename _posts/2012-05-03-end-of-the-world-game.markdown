@@ -6,7 +6,7 @@ made-with: iOS, Android, Lua (Corona API)
 game-url: http://bcjordan.github.com/eotwgame
 categories: [games, projects]
 screenshot: https://github.com/bcjordan/eotwgame/raw/master/screenshot.png
-posterous_url: http://bcjordan.github.com/eotwgame
+external_url: http://bcjordan.github.com/eotwgame
 permalink: /games/end-of-the-world
 ---
 
