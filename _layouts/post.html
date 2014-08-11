@@ -17,15 +17,15 @@ layout: layout
   <div class="authorship">
     <h3>About the Author</h3>
     <div class="copy">
-      <a href="https://twitter.com/bcjordan"><img src="https://si0.twimg.com/profile_images/1225038960/NOT_WORKING_reasonably_small.jpg" height="50" width="50" class="avatar" /></a>
+      <a href="https://twitter.com/bcjordan"><img src="/images/brian.png" height="50" width="50" class="avatar" /></a>
 
       <p>
-        I'm a game and web developer in San Francisco working on <a href="http://codingforinterviews.com">Coding for Interviews</a> among other independent projects. Formerly @ PopCap, intern @ TripAdvisor, One Laptop per Child, Tufts CS. Follow me on Twitter <a href="https://twitter.com/bcjordan">@bcjordan</a> or <a href="https://plus.google.com/102834345624798154635/about?rel=author">Google+</a>.
+        Brian is a game and web developer in San Francisco working at <a href="http://code.org">Code.org</a>, a non-profit focused on growing access to Computer Science education. Brian also curates <a href="http://codingforinterviews.com">Coding for Interviews</a>, a weekly programming interview practice newsletter. Formerly @ PopCap, intern @ TripAdvisor, One Laptop per Child, Tufts CS. Follow Brian on Twitter <a href="https://twitter.com/bcjordan">@bcjordan</a>.
       </p>
 
       {% if page.hn %}
       <p>
-        You can discuss, upvote, downvote, and poke fun of this post over at <a href="{{ page.hn }}">Hacker News</a>.
+        You can discuss, upvote, downvote, and poke fun at this post over at <a href="{{ page.hn }}">Hacker News</a>.
       </p>
       {% endif %}
 
@@ -35,17 +35,21 @@ layout: layout
       <a href="http://twitter.com/bcjordan" class="twitter-follow-button" data-show-count="false">Follow @bcjordan</a><script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
     </div>
 <br/><br/>
-		<div>
-			<div id="disqus_thread"></div>
-			<script type="text/javascript">
-			    var disqus_shortname = 'bcjordan';
-			    (function() {
-			        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-			        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-			        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-			    })();
-			</script>
-			<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-			<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
-		</div>
+      <div>
+          <div id="disqus_thread"></div>
+          <script type="text/javascript">
+              var disqus_shortname = 'bcjordan';
+              (function () {
+                  var dsq = document.createElement('script');
+                  dsq.type = 'text/javascript';
+                  dsq.async = true;
+                  dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+                  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+              })();
+          </script>
+          <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by
+              Disqus.</a></noscript>
+          <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span
+                  class="logo-disqus">Disqus</span></a>
+      </div>
   </div>
