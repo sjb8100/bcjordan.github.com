@@ -15,48 +15,92 @@ essays:
   - url: http://blog.codingforinterviews.com/reading-code-standard-libraries/
     title: "Read your standard libraries"
 ---
-<div id='slider' style="float:right"></div>
-  <div class="projects">
-    <h1>Writing:</h1>
-    <ul>
-    {% for item in page.essays %}
-      <li>
-        <span><a href="{{item.url}}">{{item.title}}</a></span>
-      </li>
-    {% endfor %}
-    </ul>
-  </div>
-    <div class="projects">
-    <h1>Projects:</h1>
-    <ul>
-    {% for post in site.categories.projects %}
-      <li>
-        <span>{{ post.date | date: "%B %Y" }}</span> <a href="{% if post.external_url %}{{ post.external_url }}{% else %}{{ post.url }}{% endif %}">{{ post.title }}</a>
-        {% if post.made-with %}({{ post.made-with }}){%endif%}
-      </li>
-    {% endfor %}
-    </ul>
-  </div>
-  <div class="hacks">
-    <h1>Micro-Hacks:</h1>
-    <ul>
-    {% for post in site.categories.hacks %}
-      <li>
-        <span>{{ post.date | date: "%B %e, %Y" }}</span> <a href="{% if post.external_url %}{{ post.external_url }}{% else %}{{ post.url }}{% endif %}">{{ post.title }}</a>
-        {% if post.made-with %}({{ post.made-with }}){%endif%}
-      </li>
-    {% endfor %}
-    </ul>
-  </div>
-  <div class="posts">
-    <h1>Tips and Tricks:</h1>
-    <ul>
-    {% for post in site.categories.tricks %}
-      <li>
-        <span>{{ post.date | date: "%B %e, %Y" }}</span> <a href="{% if post.external_url %}{{ post.external_url }}{% else %}{{ post.url }}{% endif %}">{{ post.title }}</a>
-      </li>
-    {% endfor %}
-    </ul>
-  </div>
 
+<div class="row">
+  <div class="large-12 columns">
+    <img src="http://placehold.it/1000x300&text=[banner img]">
+  </div>
+</div>
 
+<div class="row">
+  <hr>
+  <div class="large-8 columns">
+    <h4>Web and mobile engineering: front to back</h4>
+    <p>Since making my first webpage at 10 years old, web development has been a constant passion. Focused mostly on frontend development 2014+, I've worked on full-stack scalable web applications for the past few years.</p>
+    <p>Drawing from my experience developing games, I love working on challenging, highly-interactive interfaces.</p>
+    <p>Publishing and consuming open source software motivates me more than anything.</p>
+    <p><em>Latest obsessions</em>: React, Swift, Rails, Google Closure Tools, Docker and Vagrant.</p>
+  </div>
+  <div class="large-4 columns">
+    <img src="http://placehold.it/400x300&text=[img]">
+  </div>
+</div>
+
+<div class="row">
+  <hr>
+  <div class="large-8 columns">
+    <h4>Game development</h4>
+    <p>At PopCap games, I worked on Plants vs. Zombies Adventures and rapid prototyping for new titles.</p>
+    <p>From the software engineering side of things, games are especially interesting, as good, flexible design upfront is often rewarded as requirements change and designs are iterated on.</p>
+    <p>I'm especially interested in games where development can be informed by user data. A/B testing</p>
+    <p><em>Latest obsessions</em>: Unity3D, StrangeIoC, essential design patterns.</p>
+  </div>
+  <div class="large-4 columns">
+    <img src="http://placehold.it/400x300&text=[img]">
+  </div>
+</div>
+
+<div class="row">
+  <hr>
+  <div class="large-8 columns">
+    <h4>Getting sh*t done—design, community, marketing, strategy</h4>
+    <p>I love learning new things, and especially enjoy projects that reward creative thinking and use of a diverse skillset.</p>
+    <p>At Coding for Interviews, I designed products, grew a 25,000 member community and mentored new engineers.</p>
+    <p>I occasionally mentor and consult with entrepreneurs on growth and product strategy.</p>
+    <p><em>Latest obsessions</em>: principles of design (spacing, grouping, simplicity), the Traction framework, Slack and Discourse communities.</p>
+  </div>
+  <div class="large-4 columns">
+    <img src="http://placehold.it/400x300&text=[img]">
+  </div>
+</div>
+
+<div class="row">
+  <hr>
+  <div class="large-12 columns">
+    <h4>Portfolio Sample</h4>
+    <p>Selected cool-looking work in web and game development.</p>
+    <p>include gifs here</p>
+
+    <ul class="clearing-thumbs small-block-grid-1 medium-block-grid-2 large-block-grid-4" data-clearing>
+      <li>
+        <a href="http://placehold.it/800x500&text=[img]">
+          <img data-caption="caption here..." src="http://placehold.it/800x500&text=[img]"></a>
+      </li>
+      <li>
+        <a href="http://placehold.it/800x500&text=[img]"><img data-caption="caption 2 here..." src="http://placehold.it/800x500&text=[img]"></a>
+      </li>
+      <li>
+        <a href="http://placehold.it/800x500&text=[img]"><img data-caption="caption 3 here..." src="http://placehold.it/800x500&text=[img]"></a>
+      </li>
+      <li>
+        <a href="http://placehold.it/800x500&text=[img]"><img data-caption="caption 4 here..." src="http://placehold.it/800x500&text=[img]"></a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="row">
+  <div class="large-12 columns">
+    <hr>
+    <h4>Contact Me</h4>
+    <div class="large-4 columns">
+      Email: b@bcjordan.com
+    </div>
+    <div class="large-4 columns">
+      Twitter: @bcjordan
+    </div>
+    <div class="large-4 columns">
+      Skype: bcjordan
+    </div>
+  </div>
+</div>

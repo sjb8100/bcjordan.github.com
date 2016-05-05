@@ -1,0 +1,157 @@
+<!doctype html>
+
+<!--
+
+  Hi there, I'm Brian, welcome to my source code.
+
+  If you are reading this, you might enjoy the full source for bcjordan.github.com:
+    http://github.com/bcjordan/bcjordan.github.com
+
+  Find other code of mine at http://github.com/bcjordan
+
+  This page was built with the HTML5 boilerplate, templated with Jekyll, and edited using vim.
+
+-->
+
+<!-- Conditional html tag classes -->
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta name="google-site-verification" content="U0Mq5pKBcISwT9WF-1QyQLz0Ft2uJx9ayycJPp-QYvU" />
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>{{ page.title }}</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="google-site-verification" content="W9-qiSxbsrEBRPlX652-UmL-Dl6QJ2ifkeC3RNux00g" />
+
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/libs/modernizr-2.0.6.min.js"></script>
+
+  <link href="/css/foundation.min.css" rel="stylesheet">
+  <link href="/css/pygments.css" rel="stylesheet">
+
+  <style type="text/css">
+
+  </style>
+</head>
+
+<body>
+
+  <div class="topbar">
+     <div class="fill">
+       <div class="container">
+         <a class="brand" href="/">Brian Jordan</a>
+         <ul class="nav">
+           <li class="notactive"><a href="/">Home</a></li>
+           <li><a href="/">Projects</a></li>
+           <li><a href="http://github.com/bcjordan">GitHub</a></li>
+           <li><a href="http://www.linkedin.com/in/bcjordan">LinkedIn</a></li>
+           <li><a href="http://blog.bcjordan.com">Essays</a></li>
+         </ul>
+         <form action="" class="pull-right">
+           <input class="input-small" type="text" placeholder="Username">
+           <input class="input-small" type="password" placeholder="Password">
+           <button class="btn" type="submit">Sign in</button>
+         </form>
+       </div>
+     </div>
+   </div>
+
+   <div class="container">
+     <div class="content">
+       <div class="page-header">
+         {% if page.books %}
+        <div class="books">
+           {% for book in (1..12) %}
+            <img src="/images/books/{{book}}.jpeg" class="book"/>
+           {% endfor %}
+         </div>
+         {% else %}
+         <h1><a href="{{ page.url }}">{{ page.title }}</a> <small>{{page.description}} {{ page.made-with }}</small></h1>
+         {% endif %}
+       </div>
+       <div class="row">
+         <div class="span{%if page.sidebar%}10{%else%}14{%endif%}">
+           <!-- <h2>Main content</h2> -->
+           {{ content }}
+         </div>
+         {% if page.sidebar %}
+         <div class="span4 sidebar">
+           <!-- <h3>Secondary content</h3> -->
+           {{ page.sidebar }}
+         </div>
+        {% endif %}
+       </div>
+     </div>
+
+     <footer>
+       <p>Built by Brian Jordan. <a href="http://github.com/bcjordan/bcjordan.github.com">Fork my site on GitHub.</a></p>
+     </footer>
+
+   </div> <!-- /container -->
+
+  <!-- JavaScript at the bottom for fast page loading -->
+
+  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script>
+
+  <!-- scripts concatenated and minified via ant build script-->
+  <script defer src="js/plugins.js"></script>
+  <script defer src="js/script.js"></script>
+  <!-- end scripts-->
+
+  <!-- scripts specific to post-->
+  <script>{{ page.script }}</script>
+
+  {% if page.slider %}
+  <script type="text/javascript" src="/js/slider.js"></script>
+  <link href="/css/slider.min.css" rel="stylesheet" type="text/css" />
+  {% endif %}
+
+  {% if page.slider %}
+  <script>
+    var slider = new Slider($('#slider'));
+    slider.setTransition('circle').setPhotos([
+      { "src" : "/images/sprayplayscreenshot.png", "name": "Spray Play" },
+      { "src" : "/images/eotwscreenshot.png", "name": "End of the World" },
+      { "src" : "/images/ktgraph.png", "name": "Typing Analysis" },
+      { "src" : "/images/ktsidebar.png", "name": "Typing Analysis" },
+      { "src" : "/images/ktnetwork.png", "name": "Typing Analysis" },
+      { "src" : "/images/sytyk.png", "name": "Facebook App" },
+      { "src" : "/images/gifurl.png", "name": "GifURL" },
+      { "src" : "/images/redruby.jpg", "name": "Flesch Readability" },
+      { "src" : "/images/ktfull.png", "name": "Typing Game" },
+      { "src" : "/images/railsgonewild.png", "name": "Rails Docs Gone Wild" },
+      { "src" : "/images/ravegame.png", "name": "Rave Game (HTML5)" }
+    ]);
+    slider.setSize(400, 250);
+  </script>
+  {% endif %}
+
+  <!-- Change UA-XXXXX-X to be your site's ID -->
+  <script>
+    window._gaq = [['_setAccount','UA-27749628-1'],['_trackPageview'],['_trackPageLoadTime']];
+    Modernizr.load({
+      load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
+    });
+  </script>
+
+  <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you want to support IE 6.
+       chromium.org/developers/how-tos/chrome-frame-getting-started -->
+  <!--[if lt IE 7 ]>
+    <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+    <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+  <![endif]-->
+
+<!-- begin olark code --><script data-cfasync="false" type='text/javascript'>/*{literal}<![CDATA[*/
+window.olark||(function(c){var f=window,d=document,l=f.location.protocol=="https:"?"https:":"http:",z=c.name,r="load";var nt=function(){f[z]=function(){(a.s=a.s||[]).push(arguments)};var a=f[z]._={},q=c.methods.length;while(q--){(function(n){f[z][n]=function(){f[z]("call",n,arguments)}})(c.methods[q])}a.l=c.loader;a.i=nt;a.p={0:+new Date};a.P=function(u){a.p[u]=new Date-a.p[0]};function s(){a.P(r);f[z](r)}f.addEventListener?f.addEventListener(r,s,false):f.attachEvent("on"+r,s);var ld=function(){function p(hd){hd="head";return["<",hd,"></",hd,"><",i,' onl' + 'oad="var d=',g,";d.getElementsByTagName('head')[0].",j,"(d.",h,"('script')).",k,"='",l,"//",a.l,"'",'"',"></",i,">"].join("")}var i="body",m=d[i];if(!m){return setTimeout(ld,100)}a.P(1);var j="appendChild",h="createElement",k="src",n=d[h]("div"),v=n[j](d[h](z)),b=d[h]("iframe"),g="document",e="domain",o;n.style.display="none";m.insertBefore(n,m.firstChild).id=z;b.frameBorder="0";b.id=z+"-loader";if(/MSIE[ ]+6/.test(navigator.userAgent)){b.src="javascript:false"}b.allowTransparency="true";v[j](b);try{b.contentWindow[g].open()}catch(w){c[e]=d[e];o="javascript:var d="+g+".open();d.domain='"+d.domain+"';";b[k]=o+"void(0);"}try{var t=b.contentWindow[g];t.write(p());t.close()}catch(x){b[k]=o+'d.write("'+p().replace(/"/g,String.fromCharCode(92)+'"')+'");d.close();'}a.P(2)};ld()};nt()})({loader: "static.olark.com/jsclient/loader0.js",name:"olark",methods:["configure","extend","declare","identify"]});
+/* custom configuration goes here (www.olark.com/documentation) */
+olark.identify('3491-143-10-6972');/*]]>{/literal}*/</script><noscript><a href="https://www.olark.com/site/3491-143-10-6972/contact" title="Contact us" target="_blank">Questions? Feedback?</a> powered by <a href="http://www.olark.com?welcome" title="Olark live chat software">Olark live chat software</a></noscript><!-- end olark code -->
+
+</body>
+</html>

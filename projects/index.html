@@ -1,0 +1,34 @@
+---
+layout: layout
+title: "Brian Jordan"
+essays:
+  - url: http://blog.bcjordan.com/yc-hacks-project/
+    title: "YC Hacks post-mortem: 7 things that went well"
+  - url: http://blog.bcjordan.com/building-forum-beatthegmat/
+    title: "Learning to build a community forum from BEATtheGMAT"
+  - url: http://blog.codingforinterviews.com/best-programming-language-jobs/
+    title: "Choosing a programming language for interviews"
+  - url: http://blog.codingforinterviews.com/say-you-dont-know/
+    title: "Say you don't know"
+  - url: http://blog.codingforinterviews.com/reading-code-standard-libraries/
+    title: "Read your standard libraries"
+---
+
+<div class="row">
+  <div class="large-12 columns">
+    <img src="http://placehold.it/1000x300&text=[banner img]">
+  </div>
+</div>
+
+<div class="row">
+  <div class="large-12 columns">
+    <h1>Writing:</h1>
+    <ul>
+      {% for item in page.essays %}
+      <li>
+        <span><a href="{{item.url}}">{{item.title}}</a></span>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
